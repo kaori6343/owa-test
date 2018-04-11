@@ -10,6 +10,6 @@
         navigator.geolocation.getCurrentPosition(pos => printLog('location', `緯度: ${pos.coords.latitude}, 経度: ${pos.coords.longitude}`));
         printLog('countup', `counter: ${counter}`);
         counter++;
-    }, 1000);
+    }, 60000);
 
 })();
