@@ -1,0 +1,11 @@
+{
+    "short_name": "pwa-test",
+    "name": "pwa-test",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "144x144"
+    ],
+    "start_url": "/pwa-test/index.html?is_pwa=1"
+}
