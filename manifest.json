@@ -1,6 +1,6 @@
 {
     "short_name": "pwa-test",
-    "name": "pwa-test",
+    "name": "pwa-test long name",
     "icons": [
         {
             "src": "icon.png",
