@@ -7,6 +7,27 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="manifest" href="./manifest.json">
         <script async src="./main.js?v=180411_1544"></script>
+        <script defer src="https://bpadmin.test.edocode.co.jp/dist/js/pushcode.js"></script>
+        <script defer type="module" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/index.esm.js"></script>
+        <script defer type="module" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/pushcode-components.esm.js"></script>
+        <script defer nomodule="" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/pushcode-components.js"></script>
+        <script>
+        window.addEventListener('load', function() {
+          try {
+            if (PushCode && PushCode.isSupport()) {
+              PushCode.init({ domainToken: 'c50f8c9274ed6a7c6cfda79610dc38f0eaac00a6a3ac79ce2ab631f256ce161e', userid: '' });
+              if (PushCode.components) {
+                PushCode.components.openSubscribeDialog();
+              } else {
+                PushCode.requestPermission();
+              }
+            }
+          }
+          catch (err) {
+            console.error(err);
+          }
+        });
+        </script>
     </head>
     <body>
         <pre id="app"></pre>
