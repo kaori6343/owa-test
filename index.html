@@ -15,7 +15,7 @@
         window.addEventListener('load', function() {
           try {
             if (PushCode && PushCode.isSupport()) {
-              PushCode.init({ domainToken: 'c50f8c9274ed6a7c6cfda79610dc38f0eaac00a6a3ac79ce2ab631f256ce161e', userid: '' });
+              PushCode.init({ domainToken: 'c50f8c9274ed6a7c6cfda79610dc38f0eaac00a6a3ac79ce2ab631f256ce161e', userid: '' , serviceWorkerPath: '/pwa-test/pushcode_sw.js', scopePath: '/pwa-test/' });
               if (PushCode.components) {
                 PushCode.components.openSubscribeDialog();
               } else {
